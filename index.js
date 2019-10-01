@@ -6,7 +6,7 @@ http.createServer((req, res) => {
     if (req.url == "/") {
         citac++;
         res.writeHead(200, {"Content-type": "text/html"});
-        res.end(`<html><head><meta charset="UTF-8"></head><body>Pocet volani: ${citac}<input type="button" value="zvyš o 1" onclick="alert('zatim nefunguje :-P')"></body></html>`);
+        res.end(`<html><head><meta charset="UTF-8"></head><body>Pocet volani: ${citac}<input type="button" value="vynuluj" onclick="alert('zatim nefunguje :-P')"></body></html>`);
     } else if (req.url == "/hokuspokus") {
         res.writeHead(200, {"Content-type": "text/html"});
         res.end(`<html><head><meta charset="UTF-8"></head><body><h1>Můj hokus pokus</h1>blablabla</body></html>`);
